@@ -1,0 +1,10 @@
+{% for x in object_list %}
+	<br>
+	{{x.title}}
+	{{x.content}}
+	{{x.slug}}
+	{{x.created_date}}
+	{{x.updated_date}}
+	{% empty %}
+		<p>No se encontro entradas</p>
+{% endfor %}
